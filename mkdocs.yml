@@ -1,0 +1,18 @@
+site_name: Inactive Logout Documentation
+site_author: Deepen Bajracharya
+nav:
+  - Getting Started: index.md
+  - Shortcodes:
+    - User Controls: shortcodes/user_control.md
+    - User Login History: shortcodes/user_login_history.md
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  font:
+    text: Rubik
+  palette:
+    primary: deep purple
+    accent: indigo
+extra:
+  generator: false
+copyright: Inactive Logout
