@@ -1,3 +1,5 @@
+**This shortcode will only work with Inactive Logout pro enabled.**
+
 The `[ina_user_controls]` shortcode can be used to allow users to customize the inactive logout idle timeout settings from the frontend. This shortcode enables you to conditionally display the form for users with specific roles, such as `subscriber` or `administrator`..
 
 ### Syntax

@@ -1,3 +1,5 @@
+**This shortcode will only work with Inactive Logout pro enabled.**
+
 The `[ina_user_login_history]` shortcode can be used display the list of login and logout activity for the logged in user.
 
 ### Syntax
