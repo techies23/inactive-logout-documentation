@@ -13,25 +13,25 @@ The `[ina_user_controls]` shortcode can be used to allow users to customize the 
 
 ![User Control Settings](../img/user_control.png)
 
-## Usage Examples
+### Usage Examples
 
-### Example 1: Display Content for Subscribers Only
+#### Example 1: Display Content for Subscribers Only
 
 To show a message only to users with the `subscriber` role:
 
 `[ina_user_controls roles="subscriber"]`
 
-### Example 2: Display Content for Subscribers and Administrators
+#### Example 2: Display Content for Subscribers and Administrators
 
 To show a message to both `subscriber` and `administrator` roles:
 
 `[ina_user_controls roles="subscriber,administrator"]`
 
-### Example 3: Display Content for All Users roles.
+#### Example 3: Display Content for All Users roles.
 
 `[ina_user_controls]`
 
-## Important Notes
+### Important Notes
 
 - **Role names** should be lowercase and match the role slugs used in WordPress.
 
