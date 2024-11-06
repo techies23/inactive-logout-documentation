@@ -341,7 +341,7 @@
           <li class="md-nav__item">
   <a href="#example-1-display-content-for-subscribers-only" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 1: Display Content for Subscribers Only
+      Example 1: Display content for Subscribers only
     </span>
   </a>
   
@@ -350,16 +350,25 @@
           <li class="md-nav__item">
   <a href="#example-2-display-content-for-subscribers-and-administrators" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 2: Display Content for Subscribers and Administrators
+      Example 2: Display content for Subscribers and Administrators
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-3-display-content-for-all-users-roles" class="md-nav__link">
+  <a href="#example-3-display-content-for-all-user-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 3: Display Content for All Users roles.
+      Example 3: Display content for all user roles.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-display-content-for-all-user-roles-but-only-show-idle-timeout-change-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 4: Display Content for all user roles but only show idle timeout change option.
     </span>
   </a>
   
@@ -480,7 +489,7 @@
           <li class="md-nav__item">
   <a href="#example-1-display-content-for-subscribers-only" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 1: Display Content for Subscribers Only
+      Example 1: Display content for Subscribers only
     </span>
   </a>
   
@@ -489,16 +498,25 @@
           <li class="md-nav__item">
   <a href="#example-2-display-content-for-subscribers-and-administrators" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 2: Display Content for Subscribers and Administrators
+      Example 2: Display content for Subscribers and Administrators
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#example-3-display-content-for-all-users-roles" class="md-nav__link">
+  <a href="#example-3-display-content-for-all-user-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      Example 3: Display Content for All Users roles.
+      Example 3: Display content for all user roles.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-display-content-for-all-user-roles-but-only-show-idle-timeout-change-option" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 4: Display Content for all user roles but only show idle timeout change option.
     </span>
   </a>
   
@@ -538,26 +556,31 @@
 <p><strong>This shortcode will only work with Inactive Logout pro enabled.</strong></p>
 <p>The <code>[ina_user_controls]</code> shortcode can be used to allow users to customize the inactive logout idle timeout settings from the frontend. This shortcode enables you to conditionally display the form for users with specific roles, such as <code>subscriber</code> or <code>administrator</code>..</p>
 <h3 id="syntax">Syntax</h3>
-<p><code>[ina_user_controls roles="role1,role2,..."]</code></p>
+<p><code>[ina_user_controls roles="role1,role2,..." fields="idle_timeout,popup_countdown"]</code></p>
 <h3 id="parameters">Parameters</h3>
 <ul>
-<li><strong>roles</strong> (string)<br />
-  A comma-separated list of user roles that can access the settings page. Only users with the specified roles will see the content within the shortcode.</li>
+<li><strong>roles</strong> (string | required)<br />
+   A comma-separated list of user roles that can access the settings page. Only users with the specified roles will see the content within the shortcode.</li>
+<li><strong>fields</strong> (string | optional)<br />
+  A comma-separated list of field names. Only mentioned field names will work. If this parameter is not set then all fields will be shown.</li>
 </ul>
 <h3 id="example-screenshot">Example Screenshot</h3>
 <p><img alt="User Control Settings" src="../../img/user_control.png" /></p>
 <h3 id="usage-examples">Usage Examples</h3>
-<h4 id="example-1-display-content-for-subscribers-only">Example 1: Display Content for Subscribers Only</h4>
+<h4 id="example-1-display-content-for-subscribers-only">Example 1: Display content for Subscribers only</h4>
 <p>To show a message only to users with the <code>subscriber</code> role:</p>
 <p><code>[ina_user_controls roles="subscriber"]</code></p>
-<h4 id="example-2-display-content-for-subscribers-and-administrators">Example 2: Display Content for Subscribers and Administrators</h4>
+<h4 id="example-2-display-content-for-subscribers-and-administrators">Example 2: Display content for Subscribers and Administrators</h4>
 <p>To show a message to both <code>subscriber</code> and <code>administrator</code> roles:</p>
 <p><code>[ina_user_controls roles="subscriber,administrator"]</code></p>
-<h4 id="example-3-display-content-for-all-users-roles">Example 3: Display Content for All Users roles.</h4>
+<h4 id="example-3-display-content-for-all-user-roles">Example 3: Display content for all user roles.</h4>
 <p><code>[ina_user_controls]</code></p>
+<h4 id="example-4-display-content-for-all-user-roles-but-only-show-idle-timeout-change-option">Example 4: Display Content for all user roles but only show idle timeout change option.</h4>
+<p><code>[ina_user_controls fields="idle_timeout"]</code></p>
 <h3 id="important-notes">Important Notes</h3>
 <ul>
 <li><strong>Role names</strong> should be lowercase and match the role slugs used in WordPress.</li>
+<li><strong>Field names</strong> should be lowercase, and should satisfy the above mentioned strings.</li>
 </ul>
 
 
